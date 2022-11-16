@@ -5,6 +5,13 @@
     <title>App</title>
   </head>
   <body>
-    <%= message %>
+    <%- include('header') -%>
+
+    <h2><%= message %></h2>
+    <p>Az életkorod: <%= age %>.</p>
+    <p>
+      <%if (age >= 18) { %> Felnőtt vagy! <% } else { %> Gyerek vagy! <% } %>
+    </p>
+    <p>Az oldalt készítette: <%= name %></p>
   </body>
 </html>
